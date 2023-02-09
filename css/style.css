@@ -613,7 +613,7 @@ button.button-73 {
   transform: scale(0.9);
   transition: all ease 0.5s;
 }
-.clients-img img:hover{
+.clients-img:hover img{
     transition: all ease 0.5s;
     transform: scale(1.1);
 }
