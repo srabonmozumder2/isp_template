@@ -105,9 +105,9 @@ img {
 .account-button {
   text-align: center;
 }
-button.button-73 {
+/* button.button-73 {
   font-size: 14px;
-}
+} */
 .button-73 {
   background-color: #ffffff;
   border-radius: 25px;
@@ -373,7 +373,15 @@ button.button-73 {
   border-radius: 8px;
   padding: 50px;
 }
-
+.counter-icon i{
+  font-size: 18px;
+}
+.counter-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
 .funfact-content h5 {
   font-weight: 800;
   font-size: 31px;
@@ -610,12 +618,12 @@ button.button-73 {
 .clients-img img {
   max-height: 50px;
   max-width: 170px;
-  transform: scale(0.9);
+  transform: scale(0.6);
   transition: all ease 0.5s;
 }
 .single-client-area:hover img{
-    transition: all ease 0.5s;
-    transform: scale(1.1);
+    transition: all ease 0.5s;    
+    transform: scale(01.3);
 }
 
 .clients-button {
@@ -767,20 +775,25 @@ button.button-73 {
 }
 
 .accordion:after {
-  content: "\02795";
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-  margin-top: -30px;
+    content: "\02795";
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+    margin-top: -30px;
+    background-color: rgba(228, 220, 220, 0.418);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
-
 .accordion-contianer .active:after {
   content: "\2796";
 }
 
 section.Frequently-area {
-  padding: 90px;
+  padding: 90px 0;
 }
 .accordion-contianer {
   border-top: 1px solid black;
@@ -842,4 +855,42 @@ section.Frequently-area {
   .Frequently-title h3 {
     font-size: 18px;
   }
+}
+@media screen and (max-width: 575px) {
+    .hero-content h1{
+        font-size: 32px;
+    }
+    .hero-btn button.btn.btn{
+        padding: 7px 14px;
+    }
+    .section-title h3{
+        font-size: 30px;
+    }
+    .section-title h3{
+    font-size: 27px;
+    }
+    .payment-method-slider{
+        padding: 40px 0;
+    }
+    .funfact-title h3 {
+        font-size: 27px;
+    }
+    .section-title{
+        margin-bottom: 0;
+    }
+    .download-app-area{
+        padding: 0;
+    }
+    .download-title h3{
+        font-size: 30px;
+    }
+    .section-titile h3{
+        font-size: 30px;
+    }
+    .screenshot-title-area h3{
+        font-size: 30px;
+    }
+    .screenshot-content h3{
+        font-size: 20px;
+    }
 }
