@@ -67,7 +67,33 @@ $(document).ready(function() {
       $(this).next().slideToggle(200);
     });
     
-    $('.counter-testing').counterUp();
   });
   
+    // $('.counter-testing').counterUp();
 
+  $('.counter-testing').counterUp({
+    delay: 5,
+    time: 1000
+});
+
+
+
+$('.isp-gate-slid').owlCarousel({
+    loop:true,
+    dots:false,
+    center:true,
+    margin:20,
+    nav:true,
+    navText: ["<div><i class='fas fa-angle-left'></i></div>" , "<div><i class='fas fa-angle-right'></i></i></div>"],
+    responsive:{
+        0:{
+           items:1,
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+})
