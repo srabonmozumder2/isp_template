@@ -84,7 +84,7 @@ $('.isp-gate-slid').owlCarousel({
     center:true,
     margin:20,
     nav:true,
-    navText: ["<div><i class='fas fa-angle-left'></i></div>" , "<div><i class='fas fa-angle-right'></i></i></div>"],
+    navText: ["<div><i class='fas fa-arrow-left'></i></div>" , "<div><i class='fas fa-arrow-right'></i></div>"],
     responsive:{
         0:{
            items:1,
