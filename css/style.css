@@ -742,7 +742,7 @@ img {
 .screenshot-item {
   position: relative;
 }
-.screenshot-item:hover .screenshot-body .screenshot-inner-img {
+.screenshot-item:hover .screenshot-body a{
   position: absolute;
   top: 0;
   left: 0;
@@ -754,22 +754,22 @@ img {
   background-color: #929c99ba;
   height: 375px;
   width: 100%;
+  border: none;
+  text-decoration: none;
 }
-.screenshot-inner-img i {
-  position: absolute;
+.screenshot-body a{
+  display: none;
+}
+.screenshot-body a i{
   height: 50px;
   width: 50px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(219, 216, 216);
+  color: rgb(5, 137, 157);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #2ebdb1;
 }
-.screenshot-inner-img {
-  display: none;
-}
-
 /* <!--///screenshot-slider-area-end/// -->/ */
 /* <!--///Frequently Asked Questions start//////// --> */
 .owl-item.active.active:after {
@@ -832,7 +832,7 @@ section.Frequently-area {
 }
 .Frequently-item b{
   height: 35px;
-  width: 35px;
+  min-width: 35px;
   background-color: rgba(226, 222, 222, 0.436);
   color: rgb(9, 7, 7);
   display: flex;

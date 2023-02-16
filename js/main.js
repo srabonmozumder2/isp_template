@@ -73,7 +73,7 @@ $(document).ready(function() {
 
   $('.counter-testing').counterUp({
     delay: 5,
-    time: 1000
+    time: 2000
 });
 
 
@@ -97,3 +97,11 @@ $('.isp-gate-slid').owlCarousel({
         }
     }
 })
+
+$('.magnific-active').magnificPopup({
+    type: 'image',
+    delegate: 'a',
+    gallery: {
+        enabled: true
+      },
+  });
